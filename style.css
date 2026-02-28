@@ -1,0 +1,117 @@
+/* ========================================
+   ROOT BRAND COLORS
+======================================== */
+:root {
+  --cognifyz-primary: #4f46e5;
+  --cognifyz-accent: #06b6d4;
+  --cognifyz-dark: #0f172a;
+}
+
+/* ========================================
+   NAVBAR STYLING
+======================================== */
+.custom-navbar {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+/* 🌓 scroll shadow */
+.navbar-scrolled {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+}
+
+/* Brand */
+.logo-text {
+  font-weight: 800;
+  font-size: 1.4rem;
+  background: linear-gradient(90deg, var(--cognifyz-primary), var(--cognifyz-accent));
+
+  /* Standard property */
+  background-clip: text;
+
+  /* WebKit support (required for Chrome/Safari) */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Fallback color */
+  color: var(--cognifyz-primary);
+}
+
+/* ========================================
+   BURGER ANIMATION
+======================================== */
+.navbar-burger {
+  border: none;
+  background: transparent;
+}
+
+.navbar-burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 5px;
+  background: white;
+  transition: all 0.35s ease;
+}
+
+/* ✨ Burger → X */
+.navbar-burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ========================================
+   COGNIFYZ CARD
+======================================== */
+.cognifyz-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.35s ease;
+}
+
+/* Hover lift */
+.cognifyz-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+/* Tagline */
+.tagline {
+  color: var(--cognifyz-accent);
+  font-weight: 600;
+}
+
+/* CTA button */
+.cta-button {
+  margin-top: 1rem;
+  background: linear-gradient(135deg, var(--cognifyz-primary), var(--cognifyz-accent));
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79,70,229,0.4);
+}
+
+/* ========================================
+   MOBILE TUNING
+======================================== */
+@media (max-width: 768px) {
+  .cognifyz-card {
+    border-radius: 14px;
+  }
+}
