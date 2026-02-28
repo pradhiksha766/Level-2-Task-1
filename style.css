@@ -1,0 +1,131 @@
+/* Logo */
+/* Navbar strip (restore rectangular header) */
+.custom-navbar {
+  background: rgba(217, 219, 188, 0.884);
+  padding: 10px 0;
+}
+
+/* Logo (small & cute again) */
+.logo {
+  width: 28px;
+  height: 28px;
+}
+
+/* EduCare text visibility fix */
+.brand-text {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Ensure dark button stays aligned */
+#modeToggle {
+  margin-top: 0;
+}
+
+
+/* Background Images */
+.light-mode {
+  background: url("hero-bg.jpg") center/cover fixed;
+}
+
+.dark-mode {
+  background: url("dark-bg.jpg") center/cover fixed;
+}
+
+/* Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0,0,0,0.85);
+}
+
+/* Hero */
+.hero-section {
+  padding: 130px 20px 60px;
+}
+
+/* HERO TITLE COLOR */
+.hero-title {
+  color: #ffcc00; /* yellow */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+/* CTA Wrapper */
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Click Here Text */
+.cta-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #e70c0c;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  margin-bottom: 5px;
+}
+
+/* Thick Red Arrow */
+.cta-arrow {
+  font-size: 50px;
+  color: #d5f1f1;
+  animation: bounceArrow 1.4s infinite;
+  line-height: 1;
+}
+
+/* Arrow Bounce */
+@keyframes bounceArrow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(14px); }
+}
+
+/* Register Button */
+.register-btn {
+  background: linear-gradient(135deg, #f75134, #f08b08);
+  color: #000;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  border-radius: 35px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  color: #000;
+}
+
+/* Cards */
+.teacher-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.teacher-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.85);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+}
